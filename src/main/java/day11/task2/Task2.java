@@ -7,11 +7,6 @@ public class Task2 {
         Magician magician = new Magician();
         Shaman shaman = new Shaman();
 
-/*        warrior.physicalAttack(paladin);
-        System.out.println(paladin);
-        paladin.physicalAttack(warrior);
-        System.out.println(warrior);*/
-
         warrior.physicalAttack(paladin);
         System.out.println(paladin);
 
