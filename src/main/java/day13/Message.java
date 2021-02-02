@@ -1,20 +1,19 @@
 package day13;
 
-import java.sql.Timestamp;
 import java.util.Date;
 
 public class Message {
     private User sender;
     private User receiver;
     private String text;
-    private Timestamp timestamp;
+    private Date date;
 
 
     public Message(User sender, User receiver, String text) {
         this.sender = sender;
         this.receiver = receiver;
         this.text = text;
-        this.timestamp = new Timestamp(System.currentTimeMillis());
+        this.date = new Date();
     }
 
     public User getSender() {
@@ -29,14 +28,15 @@ public class Message {
         return text;
     }
 
-    //getter for date
-
+    public Date getDate() {
+        return date;
+    }
 
     @Override
     public String toString() {
-        return "FROM: " + sender +
-                " TO: " + receiver +
-                " ON: " +timestamp + " " +
-                text;
+        return "FROM: " + sender + "\n" +
+                "TO: " + receiver +"\n" +
+                "ON: " +date + " " +"\n" +
+                text + "\n";
     }
 }

@@ -24,6 +24,7 @@ public class Task1 {
         user3.sendMessage(user1, "Приободрили, спасибо вам!");
 
         MessageDatabase.showDialog(user1, user3);
+        //System.out.println(MessageDatabase.getMessages().get(0));
     }
 }
 
