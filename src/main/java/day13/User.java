@@ -13,10 +13,7 @@ public class User {
     }
 
     public void subscribe(User user){
-        if (subscriptions.contains(user)){
-            System.out.println("Этот пользователь уже есть в ваших подписках");
-        } else subscriptions.add(user);
-
+        subscriptions.add(user);
     }
 
     public boolean isSubscribed(User user){
