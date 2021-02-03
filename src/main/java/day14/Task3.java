@@ -18,8 +18,8 @@ public class Task3 {
         try (FileReader reader = new FileReader(file); BufferedReader bufferedReader = new BufferedReader(reader)) {
             String line;
             while ((line = bufferedReader.readLine()) != null) {
-                checkAge(line);
                 String[] info = line.split(" ");
+                checkAge(info[1]);
                 people.add(new Person(info[0], Integer.parseInt(info[1])));
             }
         } catch (IOException e) {

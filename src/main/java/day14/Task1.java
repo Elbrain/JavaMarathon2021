@@ -18,16 +18,9 @@ public class Task1 {
                 sum += Integer.parseInt(line);
                 counter++;
             }
-        } catch (IOException e) {
-            System.err.println("Such file not found");
+            if (counter != 10) throw new MyException("Некорректный входной файл");
+        } catch (IOException |MyException e) {
             e.printStackTrace();
-        }
-        if (counter != 10) {
-            try {
-                throw new IOException("Некорректный входной файл");
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
         }
         System.out.println(sum);
     }
