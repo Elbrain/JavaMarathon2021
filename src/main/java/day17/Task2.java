@@ -14,7 +14,7 @@ public class Task2 {
         fillTheBoardManually(gamePosition, ChessPiece.QUEEN_WHITE,new int[][]{{6,3}});
         fillTheBoardManually(gamePosition, ChessPiece.ROOK_WHITE,new int[][]{{1,1}, {7,5}});
         fillTheBoardManually(gamePosition, ChessPiece.BISHOP_WHITE,new int[][]{{3,3} , {5,4}});
-        fillTheBoardManually(gamePosition, ChessPiece.PAWN_WHITE,new int[][]{{4,4}, {5,5}, {1,7}, {6,0}, {6,5}, {6,7}});
+        fillTheBoardManually(gamePosition, ChessPiece.PAWN_WHITE,new int[][]{{4,4}, {5,5}, {6,0}, {6,5}, {6,7}});
 
         ChessBoard chessBoard = new ChessBoard(gamePosition);
         chessBoard.print();

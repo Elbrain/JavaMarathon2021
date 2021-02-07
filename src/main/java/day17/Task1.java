@@ -6,7 +6,7 @@ public class Task1 {
         ChessPiece.ROOK_BLACK,ChessPiece.ROOK_BLACK,ChessPiece.ROOK_BLACK,ChessPiece.ROOK_BLACK };
 
         for (ChessPiece chessPiece : chessArr) {
-            System.out.print(chessPiece.getModel());
+            System.out.print(chessPiece.getModel() + " ");
         }
     }
 }
